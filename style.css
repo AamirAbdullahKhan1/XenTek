@@ -98,7 +98,7 @@ header .buttons{
     gap: 14px;
 }
 
-header .buttons button{
+header .buttons a.what-coding{
     border: 2px solid #524444;
     padding: 8px;
     width: 140px;
@@ -109,8 +109,15 @@ header .buttons button{
     font-weight: bold;
 }
 
-header .buttons button.see-all{
+header .buttons a.see-all{
     background-color: #2d6a4f;
+    border: 2px solid #524444;
+    padding: 15px 10px;
+    width: 140px;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
 }
 
 header .search{
@@ -150,7 +157,8 @@ header .search button{
     margin-bottom: 30px;
 }
 
-.content .separator a{
+.content .separator a,
+.content .articles .item .bottom a{
     display: flex;
     align-items: center;
     gap: 2px;
@@ -158,7 +166,8 @@ header .search button{
     font-size: 14px;
 }
 
-.content .separator a i{
+.content .separator a i,
+.content .articles .item .bottom a i{
     font-size: 18px;
 }
 
@@ -179,7 +188,9 @@ header .search button{
 .content .courses .item .top,
 .content .courses .item .bottom,
 .content .podcasts .item .top,
-.content .podcasts .item .bottom{
+.content .podcasts .item .bottom,
+.content .articles .item .top,
+.content .articles .item .bottom{
     display: flex;
     gap: 10px;
     background-color: #fff;
@@ -213,7 +224,8 @@ header .search button{
 }
 
 .content .courses .item .bottom,
-.content .podcasts .item .bottom{
+.content .podcasts .item .bottom,
+.content .articles .item .bottom{
     border-bottom: none;
     justify-content: space-between;
     border-top: 1px dashed #888;
@@ -227,7 +239,8 @@ header .search button{
 
 .content .courses .item .bottom h5.tag,
 .content .courses .item .bottom .discount >h5,
-.content .podcasts .item .bottom h5{
+.content .podcasts .item .bottom h5,
+.content .articles .item .bottom h5{
     font-weight: 500;
     background-color: #fff2b2;
     color: #db762c;
@@ -238,7 +251,8 @@ header .search button{
 
 .content .courses .item .bottom h5.tag span,
 .content .courses .item .bottom .discount >h5 span,
-.content .podcasts .item .bottom h5 span{
+.content .podcasts .item .bottom h5 span,
+.content .articles .item .bottom h5 span{
     font-weight: bold;
 }
 
